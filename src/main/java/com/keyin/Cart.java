@@ -59,4 +59,8 @@ public class Cart {
         System.out.println("Total: $" + calculateTotal() + ". Thank you for shopping with us!");
         games.clear();
     }
+
+    public List<Games> getGames() {
+        return games;
+    }
 }
