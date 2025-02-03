@@ -86,7 +86,9 @@ Why does testing matter?
 The project uses Maven for dependency management. The required dependencies are listed in pom.xml and are automatically downloaded.
 
 Required Dependencies:
+
 JUnit 5 - 5.8.1 - Maven Central
+
 Maven Compiler Plugin - 3.8.1 - Maven Central
 
 To install the dependencies, run:
@@ -94,3 +96,16 @@ To install the dependencies, run:
 ```sh
 mvn clean install
 ```
+
+# Challenges Faced
+
+Here's some problems I encountered during my time coding this application:
+
+1️. Maven Build Failing in VSCode
+Issue: While running and debugging the Main.java file, the following came up: "Build failed, do you want to continue?" I fixed it by cloning the repo again.
+
+2. Purchase History Not Saving
+   Issue: The Purchase History was not being saved. Turns out I had the logic wrong so I had to alter it.
+
+3. Too many decimal places in checkout(User user)
+   Issue: When viewing the checkout, the total would show more than 2 decimal points. I fixed it by altering how it was shown in the method used.
