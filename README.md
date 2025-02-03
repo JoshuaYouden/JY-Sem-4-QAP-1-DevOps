@@ -48,3 +48,49 @@ Why this is clean code?
 
 1. Attributes are private, preventing unintended modifications.
 2. Getter methods control data access, ensuring encapsulation.
+
+# Unit Testing & Test Cases
+
+JUnit 5 Tests Implemented:
+
+1. Cart Functionality:
+   Adding a game to the cart.
+   Removing a game from the cart.
+   Checking total price calculation.
+
+2. Purchase History:
+   Saving and retrieving purchase history.
+
+3. Game Search & Availability:
+   Searching for an existing game.
+   Searching for a non-existing game.
+
+Here's an example:
+
+```java
+@Test
+    public void addGameToCartTest() {
+        cart.addGame(game1);
+        List<Games> games = cart.getGames();
+        assertEquals(1, games.size());
+    }
+```
+
+Why does testing matter?
+
+1. It ensures that functionality works as expected.
+2. It helps prevent bugs when modifying the code.
+
+# Dependencies
+
+The project uses Maven for dependency management. The required dependencies are listed in pom.xml and are automatically downloaded.
+
+Required Dependencies:
+JUnit 5 - 5.8.1 - Maven Central
+Maven Compiler Plugin - 3.8.1 - Maven Central
+
+To install the dependencies, run:
+
+```sh
+mvn clean install
+```
