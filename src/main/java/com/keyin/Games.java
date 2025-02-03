@@ -2,13 +2,12 @@ package com.keyin;
 
 public class Games {
     private String title;
-    private int price;
+    private double price;
     private String genre;
-    private int price;
     private int amount;
     private String ageRating;
 
-    public Games(String title, int price, String genre, int amount, String ageRating) {
+    public Games(String title, double price, String genre, int amount, String ageRating) {
         this.title = title;
         this.price = price;
         this.genre = genre;
@@ -20,7 +19,7 @@ public class Games {
         return title;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
