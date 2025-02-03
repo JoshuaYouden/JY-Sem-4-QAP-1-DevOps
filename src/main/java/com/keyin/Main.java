@@ -32,7 +32,7 @@ public class Main {
         System.out.println("\n Proceeding to checkout...");
         cart.checkout();
 
-        System.out.println("\nViewing Purchase History...");
+        System.out.println("\n Viewing Purchase History...");
         user.purchaseHistory();
 
         System.out.println("\n Thank you for your purchases and we hope to see you again, " + user.getUsername() + "!");
