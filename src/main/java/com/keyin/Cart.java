@@ -13,7 +13,7 @@ public class Cart {
     public void addGame(Games game) {
         if (game.getAmount() > 0) {
             this.games.add(game);
-            System.out.println("Added " + game.getTitle() + " to cart: ");
+            System.out.println("Added " + game.getTitle() + " to cart. ");
         } else {
             System.out.println(game.getTitle() + " is out of stock.");
         }
@@ -22,7 +22,7 @@ public class Cart {
     public void removeGame(Games game) {
         if (this.games.contains(game)) {
             this.games.remove(game);
-            System.out.println("Removed " + game.getTitle() + " from cart: ");
+            System.out.println("Removed " + game.getTitle() + " from cart. ");
         } else {
             System.out.println(game.getTitle() + " is not in the cart.");
         }
