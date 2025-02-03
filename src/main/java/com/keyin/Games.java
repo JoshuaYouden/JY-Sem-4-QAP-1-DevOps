@@ -2,6 +2,7 @@ package com.keyin;
 
 public class Games {
     private String title;
+    private int price;
     private String genre;
     private int price;
     private int amount;
@@ -51,8 +52,8 @@ public class Games {
         this.amount = amount;
     }
 
-    public void setAgeRating(String gameRating) {
-        this.ageRating = gameRating;
+    public void setAgeRating(String ageRating) {
+        this.ageRating = ageRating;
     }
 
     @Override
