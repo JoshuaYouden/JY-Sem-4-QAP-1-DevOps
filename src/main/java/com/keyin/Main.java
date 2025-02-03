@@ -11,7 +11,7 @@ public class Main {
         store.addGame(new Games("Elden Ring", 59.99, "RPG", 15, "M"));
         store.addGame(new Games("Cyberpunk 2077", 49.99, "Action", 18, "M"));
 
-        System.out.println("Welcome to the game store, " + user.getUsername() + "! Here are our available games:");
+        System.out.println("Welcome to the game store, " + user.getUsername() + "!");
         store.showListOfGames();
 
         System.out.println("\nAdding Cyberpunk 2077 to cart... ");
@@ -30,7 +30,7 @@ public class Main {
         cart.removeGame(store.searchGame("The Legend of Zelda: Breath of the Wild"));
 
         System.out.println("\nProceeding to checkout...");
-        cart.checkout();
+        cart.checkout(user);
 
         System.out.println("\nViewing Purchase History...");
         user.purchaseHistory();
