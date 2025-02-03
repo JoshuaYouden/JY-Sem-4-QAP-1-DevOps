@@ -28,7 +28,6 @@ Why is this clean code?
 
 1. The method name calculateTotal() is clear and descriptive.
 2. Proper indentation and spacing improve readability.
-3. Math.round() ensures the total price is formatted correctly
 
 2️⃣ Single Responsibility Principle (SRP)
 
@@ -101,11 +100,14 @@ mvn clean install
 
 Here's some problems I encountered during my time coding this application:
 
-1️. Maven Build Failing in VSCode
+1. Maven Build Failing in VSCode
+
 Issue: While running and debugging the Main.java file, the following came up: "Build failed, do you want to continue?" I fixed it by cloning the repo again.
 
 2. Purchase History Not Saving
-   Issue: The Purchase History was not being saved. Turns out I had the logic wrong so I had to alter it.
+
+Issue: The Purchase History was not being saved. Turns out I had the logic wrong so I had to alter it.
 
 3. Too many decimal places in checkout(User user)
-   Issue: When viewing the checkout, the total would show more than 2 decimal points. I fixed it by altering how it was shown in the method used.
+
+Issue: When viewing the checkout, the total would show more than 2 decimal points. I fixed it by altering how it was shown in the method used.
