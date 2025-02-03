@@ -24,7 +24,7 @@ public class UserTest {
 
     @Test
     public void purchaseHistoryTest() {
-        user.addPurchase(game1);
+        user.addPurchases(List.of(game1));
         List<Games> purchaseHistory = user.getPurchaseHistory();
         assertEquals(1, purchaseHistory.size());
         assertEquals("Call of Duty", purchaseHistory.get(0).getTitle());

@@ -20,8 +20,8 @@ public class User {
         return purchaseHistory;
     }
 
-    public void addPurchase(Games game) {
-        purchaseHistory.add(game);
+    public void addPurchases(List<Games> game) {
+        this.purchaseHistory.addAll(game);
     }
 
     public void purchaseHistory() {
@@ -29,7 +29,9 @@ public class User {
             System.out.println("Purchase history is empty.");
         } else {
             System.out.println("Purchase history for " + username + ":");
-            purchaseHistory.forEach(System.out::println);
+            for (Games game : purchaseHistory) {
+                System.out.println("- " + game.getTitle() + " ($" + game.getPrice() + ")");
+            }
         }
     }
 }
