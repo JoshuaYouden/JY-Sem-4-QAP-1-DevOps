@@ -13,19 +13,38 @@ This Game Store System is a command-line application that simulates an online ga
 5. View Cart - Displays the games currently in the cart along with the total price.
 6. Checkout - Purchases all games in the cart and saves them to the user's purchase history.
 7. View Purchase History - Shows all games the user has purchased.
-   The project follows object-oriented programming (OOP) principles, with well structured classes (Game, Cart, User, Store). It is built using Java and JUnit 5 for testing.
+
+The project follows object-oriented programming (OOP) principles, with well structured classes (Game, Cart, User, Store). It is built using Java and JUnit 5 for testing.
 
 # Clean Code Practices
 
 This project follows clean coding principles, including meaningful naming, modular methods, and structured class design. The following are some examples:
-1️. Meaningful Naming & Code Readability
 
-```java
-public double calculateTotal() {
-    double total = 0.0;
-    for (Games game : this.games) {
-        total += game.getPrice();
-    }
-    return Math.round(total * 100.0) / 100.0;
-}
-```
+1️⃣ Meaningful Naming & Code Readability
+
+![calculateTotal method](/src/screenshots/Total.PNG)
+
+Why is this clean code?
+
+1. The method name calculateTotal() is clear and descriptive.
+2. Proper indentation and spacing improve readability.
+3. Math.round() ensures the total price is formatted correctly
+
+2️⃣ Single Responsibility Principle (SRP)
+
+![addGame method](/src/screenshots/Add.PNG)
+
+Why is this clean code?
+
+1. The method only adds a game to the cart, following SRP.
+2. It contains clear conditional logic for handling stock availability.
+
+3️⃣ Proper Encapsulation
+
+![private values](/src/screenshots/Private.PNG)
+![getters](/src/screenshots/Getters.PNG)
+
+Why this is clean code?
+
+1. Attributes are private, preventing unintended modifications.
+2. Getter methods control data access, ensuring encapsulation.
