@@ -7,12 +7,11 @@ This Game Store System is a command-line application that simulates an online ga
 # Main Features
 
 1. View Store Games - Displays all available games.
-2. Search for a Game - Allows users to find games by title.
-3. Add Game to Cart - Adds a selected game to the cart.
-4. Remove Game from Cart - Removes a selected game from the cart.
-5. View Cart - Displays the games currently in the cart along with the total price.
-6. Checkout - Purchases all games in the cart and saves them to the user's purchase history.
-7. View Purchase History - Shows all games the user has purchased.
+2. Add Game to Cart - Adds a selected game to the cart.
+3. Remove Game from Cart - Removes a selected game from the cart.
+4. View Cart - Displays the games currently in the cart along with the total price.
+5. Checkout - Purchases all games in the cart and saves them to the user's purchase history.
+6. View Purchase History - Shows all games the user has purchased.
 
 The project follows object-oriented programming (OOP) principles, with well structured classes (Game, Cart, User, Store). It is built using Java and JUnit 5 for testing.
 
